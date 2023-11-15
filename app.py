@@ -3,10 +3,7 @@
 
 from flask import Flask, render_template
 
-from chronic.common import generate_token
-
 app = Flask(__name__)
-app.config["DEBUG"] = True
 
 @app.route('/')
 def index():
@@ -14,5 +11,5 @@ def index():
 
 @app.route('/login')
 def login():
-    return f"{generate_token()}"
+    return "Hi, this page is still a work in progress"
 
