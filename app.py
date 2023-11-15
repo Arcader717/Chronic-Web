@@ -1,8 +1,8 @@
 from quart import Quart, redirect, render_template, request
 
-app = Quart(__name__)
+application = Quart(__name__)
 
-@app.route('/')
+@application.route('/')
 async def index():
     return "Testing Out AWS"
 
@@ -12,4 +12,4 @@ if __name__ == "__main__":
     from hypercorn.config import config
 
     config = Config.from_path("hypercorn_config.py")
-    serve(app, config)
+    serve(application, config)
