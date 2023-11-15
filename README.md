@@ -1,3 +1,0 @@
-# Chronic
-
-The website
