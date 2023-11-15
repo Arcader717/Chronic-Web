@@ -1,1 +1,2 @@
 quart==0.19.3
+discoauth==2.0.0
