@@ -1,0 +1,12 @@
+body {
+    background-color: lightgrey;
+    font-family: sans;
+}
+
+#home {
+    color: black;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 240px;
+    font-size: 100px;
+}
