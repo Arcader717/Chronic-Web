@@ -1,12 +1,87 @@
 body {
-    background-color: lightgrey;
-    font-family: sans;
+  background-color: lightgrey;
+  font-family: Sans;
+}
+
+.nav {
+  background-color: #333;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+.nav-links{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.nav-link {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+#nav-name {
+  width: 50%;
+  padding-left: 10px;
 }
 
 #home {
-    color: black;
-    text-align: center;
+  color: black;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 240px;
+  font-size: 100px
+}
+
+.disBtn {
+  background-color: rgba(88, 101, 242, 1);
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+.disBtn:hover {
+  color: rgba(88, 101, 242, 1);
+  background-color: white;
+}
+
+#selling-point {
+  background-color: #333;
+  font-size: 20px;
+  color: lightgray;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-left: 18px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#about {
     margin-top: 25px;
-    margin-bottom: 240px;
-    font-size: 100px;
+    transition: 0.5s;
+}
+
+#about-img {
+
+}
+
+#about-txt {
+    width: 45%;
+    height: 100%;
+    margin-left: 5%;
+    text-align: center;
+    float: right;
+}
+
+#mod-list {
+    text-decoration: none;
 }

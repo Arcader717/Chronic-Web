@@ -1,12 +1,86 @@
 <html>
+
     <head>
+
         <title>Chronic</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/f6a529f994.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='chronic_FILL0_wght400_GRAD0_opsz24.png') }}">
+        <style>
+            @font-face {
+                font-family: gg-sans;
+                src: url({{ url_for('static', filename='font/gg sans Regular.woff') }});
+            }
 
+            @font-face {
+                font-family: gg-sans;
+                src: url({{ url_for('static', filename='font/gg sans Bold.woff') }});
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: gg-sans;
+                src: url({{ url_for('static', filename='font/gg sans Medium.woff') }});
+                font-weight: 500;
+            }
+
+            @font-face {
+                font-family: gg-sans;
+                src: url({{ url_for('static', filename='font/gg sans Semibold.woff') }});
+                font-weight: 600;
+            }
+
+            body {
+                font-family: gg-sans;
+            }
+        </style>
+
+    </head>
     <body>
 
+        <div class="nav">
+
+            <div class="nav-links">
+
+                <a class="active nav-link" href="{{ url_for('index') }}">Home</a>
+                <a class="nav-link" href="#news">News</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#about">About</a>
+                <button class="disBtn"><a class="disBtn" href="{{ url_for('login') }}">Login with Discord</a></button>
+
+            </div>
+
+        </div>
         <h1 id="home">Chronic</h1>
+        <div id="selling-point">
+
+            <p>Chronic is a webhook maker<br><br> Simple as that<br><br><br><br><br>But it can be so much more</p>
+
+        </div>
+        <span id="about">
+
+            <div id="about-text">
+
+                <h4>Hi! I'm Arcader717, the developer of this bot</h5>
+                <br>
+                <h4>Chronic, (Pronounced /ˈkränikˈ/), is a bot made for anonymity</h4>
+                <h4>Using webhooks to convey messages without revealing who sent them</h4>
+                <h4>While also providing moderation tools to: </h4>
+                <ul id="mod-list">
+
+                    <li>Server Owners,</li>
+                    <li>Administrators, and</li>
+                    <li>Moderators</li>
+
+                </ul>
+
+            </div>
+
+        </span>
 
     </body>
+
 </html>
