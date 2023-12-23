@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 CLID = os.getenv('CLID')
 CLSEC = os.getenv('CLSEC')
-reuri = "https://online8157.pythonanywhere.com/callback"
+reuri = "https://www.chronicbot.xyz/callback"
 scope = ["identify", "guilds"]
 
 url = auth(CLID, scope, reuri).url()
